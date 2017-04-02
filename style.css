@@ -1,0 +1,42 @@
+div#header {
+  width: 60%;
+  max-width: 900px;
+  height: 400px;
+  margin: auto;
+  border: 1px solid black;
+  background-image: url(photos/ferry_sm.jpg);
+  background-size: cover;
+  box-shadow: 5px 5px 5px 0px silver;
+}
+
+div#photos {
+  text-align: center;
+  margin-top: 80px;
+}
+
+div#photos img {
+  border: 1px solid black;
+  width: 19%;
+  max-width: 200px;
+  box-shadow: 5px 5px 5px 0px silver;
+}
+
+div#photos #photo-0 {
+  transform: rotate(10deg);
+}
+
+div#photos #photo-1 {
+  transform: rotate(-8deg);
+}
+
+div#photos #photo-2 {
+  transform: rotate(-15deg);
+}
+
+div#photos #photo-3 {
+  transform: rotate(12deg);
+}
+
+div#photos #photo-4 {
+  transform: rotate(-18deg);
+}
