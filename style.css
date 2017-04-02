@@ -7,6 +7,20 @@ div#header {
   background-image: url(photos/ferry_sm.jpg);
   background-size: cover;
   box-shadow: 5px 5px 5px 0px silver;
+  margin-bottom: 60px;
+}
+
+div#date, div#where {
+  text-align: center;
+}
+
+div#date {
+  font-size: 24pt;
+}
+
+div#where {
+  font-size: 20pt;
+  font-style: italic;
 }
 
 div#photos {
