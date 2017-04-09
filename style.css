@@ -1,31 +1,21 @@
 body {
   background-color: #727F91;
-  margin: 0;
-}
-
-div#date, div#where {
-  text-align: center;
-}
-
-div#date {
-  font-size: 24pt;
-}
-
-div#where {
+  color: white;
+  font-family: 'Spirax', cursive;
   font-size: 20pt;
-  font-style: italic;
+  margin: 0;
+  text-align: center;
 }
 
-div#photos {
-  text-align: center;
-  margin-top: 80px;
+#gallery{
+  margin-top: 50px;
 }
 
 div#photos img {
   border: 1px solid black;
-  width: 19%;
+  box-shadow: 5px 5px 5px 0px #555;
   max-width: 200px;
-  box-shadow: 5px 5px 5px 0px silver;
+  width: 19%;
 }
 
 div#photos #photo-0 {

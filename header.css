@@ -1,22 +1,49 @@
 #banner {
-  background-image: url(photos/circles_border_top.png);
-  background-repeat: no-repeat;
-  background-size: contain;
   margin: auto;
+  text-align: center;
+}
+
+.heart-banner {
+  /* source: https://pixabay.com/en/chain-heart-valentine-love-1980250 */
+  background-image: url(photos/chain.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -3vw;
+  height: 9vw;
 }
 
 .header-text {
-  color: white;
-  font-family: 'Spirax', cursive;
   font-size: 50px;
-  padding-bottom: 5vw;
-  padding-top: 10vw;
+  font-style: italic;
   text-align: center;
   vertical-align: bottom;
 }
 
+#date {
+  font-size: 24pt;
+  padding-bottom: 3vw;
+  padding-top: 3vw;
+}
+
+.horizontal-menu {
+  margin-bottom: 7px;
+}
+
+.horizontal-menu-item {
+  border: 1px solid white;
+  font-size: 22px;
+  padding: 2px 10px;
+}
+
+.horizontal-menu-item a:link {
+  color: #FEFE87;
+}
+
+.horizontal-menu-item a:visited{
+  color: #FEAD88;
+}
+
 #splash-image{
-  box-shadow: 5px 5px 5px 0px silver;
   display: block;
   margin: auto;
   margin-bottom: 60px;
@@ -24,3 +51,10 @@
   width: 60%;
 }
 
+hr {
+  border-color: #FEAD88;
+}
+
+#footer {
+  transform: scaley(-1);
+}
