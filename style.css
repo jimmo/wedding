@@ -1,13 +1,6 @@
-div#header {
-  width: 60%;
-  max-width: 900px;
-  height: 400px;
-  margin: auto;
-  border: 1px solid black;
-  background-image: url(photos/ferry_sm.jpg);
-  background-size: cover;
-  box-shadow: 5px 5px 5px 0px silver;
-  margin-bottom: 60px;
+body {
+  background-color: #727F91;
+  margin: 0;
 }
 
 div#date, div#where {

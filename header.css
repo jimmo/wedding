@@ -1,0 +1,26 @@
+#banner {
+  background-image: url(photos/circles_border_top.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+
+.header-text {
+  color: white;
+  font-family: 'Spirax', cursive;
+  font-size: 50px;
+  padding-bottom: 5vw;
+  padding-top: 10vw;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+#splash-image{
+  box-shadow: 5px 5px 5px 0px silver;
+  display: block;
+  margin: auto;
+  margin-bottom: 60px;
+  max-width: 512px;
+  width: 60%;
+}
+
