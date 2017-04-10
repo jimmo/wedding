@@ -48,7 +48,7 @@ div#photos #photo-4 {
   background-image: url(photos/chain.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -3vw;
+  background-position-y: -4vw;
   height: 10vw;
 }
 
@@ -62,7 +62,7 @@ div#photos #photo-4 {
 
 .horizontal-menu-item {
   border: 1px solid #668AA3;
-  font-size: 22px;
+  font-size: calc(12px + 1vw);
   padding: 2px 10px;
 }
 
