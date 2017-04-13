@@ -1,7 +1,9 @@
 .content {
-  height: calc(100% - 20vw);
+  height: 79vw;
+  max-height: 560px;
   position: relative;
   margin: auto;
+  margin-bottom: 8.5vw;
   max-width: 500px;
   width: 70vw;
 }
