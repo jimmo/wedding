@@ -38,11 +38,6 @@ div#photos #photo-4 {
   transform: rotate(-18deg);
 }
 
-#banner {
-  margin: auto;
-  text-align: center;
-}
-
 .heart-banner {
   /* source: https://pixabay.com/en/chain-heart-valentine-love-1980250 */
   background-image: url(photos/chain.png);

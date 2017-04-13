@@ -5,7 +5,7 @@
  * @param imageHtml
  * @param titleStr
  * @param contentHtml
- * @param? tabName
+ * @param tabName
  */
 {template .card}
 <div tabindex="0" class="photo-frame" id="{$id}">
@@ -34,6 +34,7 @@
     {param id: 'home' /}
     {param titleStr: 'Eddy and Jim' /}
     {param contentHtml: 'September 23, 2017' /}
+    {param tabName: 'Home' /}
   {/call}
 
   {call .card}
@@ -46,10 +47,12 @@
       <div class="photo-subtitle">
         Iron Cove, Sydney
       </div>
-      We'll be shuttling guests to the island via water taxi starting at 11am from Leichhardt Park Wharf.
+      We'll be shuttling guests to the island via water taxi starting at 11am from Leichhardt Park Wharf.<br>
+      There is a small amount of free parking at Leichhardt Oval.<br>
       If you miss us, please get a water taxi from Rodd Point to Rodd Island.<br>
       <a href="http://www.h2owatertaxis.com.au">H20 Water Taxis</a>
     {/param}
+    {param tabName: 'Venue info' /}
   {/call}
 
   {call .card}
@@ -88,6 +91,7 @@
       </li>
     </ul>
     {/param}
+    {param tabName: 'Visiting Sydney' /}
   {/call}
 
   {call .card}
@@ -99,5 +103,6 @@
       please contribute to our honeymoon or donate to charity.
         TODO(Write better blurb about donations)
     {/param}
+    {param tabName: 'Registry' /}
   {/call}
 {/template}
