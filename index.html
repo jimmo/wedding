@@ -4,12 +4,15 @@
     <title>Save the date!</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
+    <script type="text/javascript" src="soy/closure-templates/soyutils.js"></script>
+    <script type="text/javascript" src="soy/generated/main.js"></script>
   </head>
   <body>
 
+    <!--
     <div class="horizontal-menu">
       <span class="horizontal-menu-item">
-        <a href="www.example.com">RSVP</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvTCId3RG0bBXZROWaQk3ViMVcEgOUXLppNr1SSPxuDFGmow/viewform" target="blank">RSVP</a>
       </span>
       <span class="horizontal-menu-item">
         <a href="#where">Venue info</a>
@@ -24,6 +27,7 @@
         <a href="#gallery">Gallery</a>
       </span>
     </div>
+    --!>
     <div id="banner">
       <div class="heart-banner"></div>
       <div class="header-box">
@@ -31,45 +35,6 @@
     </div>
 
     <div class="content">
-      <div tabindex="0" class="photo-frame" id="home">
-        <img src="photos/ferry_sm.jpg">
-        <div class="photo-title">
-          Eddy and Jim
-        </div>
-        <div class="photo-text">
-          September 23, 2017
-        </div>
-      </div>
-
-      <a name="where" tabindex="0" class="photo-frame" id="where">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.013663977963!2d151.151001015087!3d-33.86353873065775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12afefea677fd9%3A0xf017d68f9f0a2a0!2sRodd+Island!5e0!3m2!1sen!2sau!4v1491142369141" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <div class="photo-title">
-          Rodd Island, Iron Cove, Sydney
-        </div>
-        <div class="photo-text">
-          TODO(how to get there, what to do on the day, including attire guidance)
-        </div>
-      </a>
-
-      <a name="travel" tabindex="0" class="photo-frame" id="travel-info">
-        <div class="photo-title">
-          Sydney Travel info
-        </div>
-        <div class="photo-text">
-          TODO(Recommendations for hotels and such, suggestions for flights from Chch/Perth?)
-        </div>
-      </a>
-
-      <div tabindex="0" class="photo-frame" id="registry">
-        <div class="photo-title">
-          <a name="registry">Registry</a>
-        </div>
-        <div class="photo-text">
-          Our house is full, so we don't need any gifts! If you feel like you must give us something,
-          please contribute to our honeymoon or donate to charity.
-          TODO(Write better blurb about donations)
-        </div>
-      </div>
     </div>
 
     <div id="photos">
@@ -82,5 +47,9 @@
 
     <div id="footer" class="heart-banner"></div>
 
+    <script type="text/javascript">
+      let contentEl = document.getElementsByClassName("content")[0];
+      contentEl.innerHTML = soy.content();
+    </script>
   </body>
 </html>

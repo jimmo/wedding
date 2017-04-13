@@ -12,15 +12,13 @@
   border: 1px solid #668AA3;
   color: #668AA3;
   display: block;
-  text-align: center;
-  vertical-align: bottom;
   padding: 10px;
-  width: 100%;
   outline: 0;
-
   position: absolute;
+  text-align: center;
   top: 0;
-
+  vertical-align: bottom;
+  width: 100%;
 }
 
 .photo-frame img,
@@ -31,18 +29,40 @@
 
 .photo-frame iframe {
   height: 39.4vw;
+  max-height: 370px;
 }
 
 .photo-title {
-  font-size: calc(16px + 3vw);
+  font-size: calc(12px + 2vw);
   font-style: italic;
-  margin-top: 3vw;
+  margin-top: 1vw;
+}
+
+.photo-subtitle {
+  font-size: calc(10px + 1.5vw);
+  font-style: italic;
+  text-align: center;
 }
 
 .photo-text {
+  font-family: "Lato";
+  font-size: calc(10px + 1vw);
+  padding-bottom: 1vw;
+}
+
+#home .photo-title {
+  font-size: calc(16px + 3vw);
+  margin-top: 3vw;
+  margin-bottom: 2vw;
+}
+#home .photo-text {
   font-size: calc(12px + 2vw);
   padding-bottom: 3vw;
-  padding-top: 3vw;
+}
+
+#travel .photo-text,
+#where .photo-text {
+  text-align: left;
 }
 
 #home {
@@ -55,7 +75,7 @@
   z-index: 90;
 }
 
-#travel-info {
+#travel {
   transform: rotate(7deg);
   z-index: 80;
 }
@@ -69,3 +89,19 @@
   z-index: 200 !important;
 }
 
+.photo-tab {
+	border-top: 1px solid black;
+	position: absolute;
+	left: 100%;
+	top: -1px;
+  width: 40px;
+}
+
+.photo-flag {
+	border: 1px solid black;
+	background-color: grey;
+	color: white;
+  left: 40px;
+  position: absolute;
+  top: -1px;
+}
