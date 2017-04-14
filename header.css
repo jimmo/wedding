@@ -1,9 +1,10 @@
 .content {
-  height: 77vw;
-  max-height: 480px;
+  height: 82vw;
+  max-height: 590px;
   position: relative;
   margin: auto;
-  margin-bottom: 8.5vw;
+  margin-bottom: 3vh;
+  margin-top: 1vh;
   max-width: 500px;
   width: 70vw;
 }
@@ -47,35 +48,39 @@
 .photo-subtitle {
   font-size: calc(10px + 1.5vw);
   font-style: italic;
-  margin-bottom: 1vw;
   text-align: center;
 }
 
 .photo-text {
   font-family: "Lato";
-  font-size: calc(10px + 0.5vw);
+  font-size: calc(12px + 0.5vw);
   padding-bottom: 1vw;
   text-align: left;
 }
 
 #home .photo-title {
-  font-size: calc(16px + 3vw);
+  font-size: calc(38px + 2.5vw);
   margin-top: 3vw;
   margin-bottom: 3vw;
 }
 #home .photo-text {
   font-family: 'Spirax';
-  font-size: calc(12px + 2vw);
+  font-size: calc(20px + 1.5vw);
   text-align: center;
 }
 
 #home {
-  transform: rotate(2deg);
+  transform: rotate(2deg) translate(-5px, 10px);
   z-index: 100;
 }
 
+#rsvp {
+  transform: rotate(4deg) translatex(2px);
+  z-index: 95;
+}
+
 #where {
-  transform: rotate(-3deg);
+  transform: rotate(-3deg) translate(3px, -5px);
   z-index: 90;
 }
 
@@ -125,8 +130,12 @@
   color: #FEAD88;
 }
 
+#rsvp .photo-tab {
+  top: 45px;
+}
+
 #where .photo-tab {
-  top: 95px;
+  top: 150px;
 }
 #travel .photo-tab {
   top: 140px;
@@ -151,3 +160,11 @@
 .photos-beach {
   background-image: url(photos/beach_sm.jpg);
 }
+ #rsvp iframe {
+   height: 79vw;
+   max-height: 560px;
+ }
+
+ ul {
+   margin-top: 0;
+ }
