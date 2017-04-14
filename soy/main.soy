@@ -29,7 +29,7 @@
 {template .content}
   {call .card}
     {param imageHtml}
-      <img src="photos/ferry_sm.jpg">
+      <div class="photo photos-ferry"></div>
     {/param}
     {param id: 'home' /}
     {param titleStr: 'Eddy and Jim' /}
@@ -56,7 +56,9 @@
   {/call}
 
   {call .card}
-    {param imageHtml}None{/param}
+    {param imageHtml}
+      <img src="photos/whitsundays_sm.jpg">
+    {/param}
     {param id: 'travel' /}
     {param titleStr: 'Visiting Sydney' /}
     {param contentHtml}
@@ -95,13 +97,38 @@
   {/call}
 
   {call .card}
-    {param imageHtml}None{/param}
+    {param imageHtml}
+      <div class="photo photos-beach"></div>
+    {/param}
     {param id: 'registry' /}
     {param titleStr: 'Registry' /}
     {param contentHtml}
       Our house is full, so we don't need any gifts! If you feel like you must give us something,
-      please contribute to our honeymoon or donate to charity.
-        TODO(Write better blurb about donations)
+      please contribute to our honeymoon or donate to charity.<br>
+
+      We suggest one of these (or an equivalent in your country):
+      <ul>
+        <li>
+          <a href="https://www.thesmithfamily.com.au">
+            The Smith Family
+          </a>
+        </li>
+        <li>
+          <a href="https://unwomen.org.au">
+            UN Women National Committee Australia
+          </a>
+        </li>
+        <li>
+          <a href="http://www.wateraid.org/au">
+            WaterAid Australia
+          </a>
+        </li>
+        <li>
+          <a href="http://www.doctorswithoutborders.org">
+            Doctors Without Borders
+          </a>
+        </li>
+      </ul>
     {/param}
     {param tabName: 'Registry' /}
   {/call}

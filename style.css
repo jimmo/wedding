@@ -43,8 +43,8 @@ div#photos #photo-4 {
   background-image: url(photos/chain.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -4vw;
-  height: 10vw;
+  background-position-y: -5vw;
+  height: 8vw;
 }
 
 .horizontal-menu {

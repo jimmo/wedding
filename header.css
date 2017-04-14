@@ -1,6 +1,6 @@
 .content {
-  height: 79vw;
-  max-height: 560px;
+  height: 77vw;
+  max-height: 480px;
   position: relative;
   margin: auto;
   margin-bottom: 8.5vw;
@@ -25,15 +25,17 @@
   width: 100%;
 }
 
-.photo-frame img,
-.photo-frame iframe {
+.photo-frame img {
   display: block;
   width: 100%;
 }
 
-.photo-frame iframe {
+.photo-frame iframe,
+.photo-frame .photo {
+  display: block;
+  width: 100%;
   height: 39.4vw;
-  max-height: 370px;
+  max-height: 282px;
 }
 
 .photo-title {
@@ -45,6 +47,7 @@
 .photo-subtitle {
   font-size: calc(10px + 1.5vw);
   font-style: italic;
+  margin-bottom: 1vw;
   text-align: center;
 }
 
@@ -52,21 +55,18 @@
   font-family: "Lato";
   font-size: calc(10px + 0.5vw);
   padding-bottom: 1vw;
+  text-align: left;
 }
 
 #home .photo-title {
   font-size: calc(16px + 3vw);
   margin-top: 3vw;
-  margin-bottom: 2vw;
+  margin-bottom: 3vw;
 }
 #home .photo-text {
+  font-family: 'Spirax';
   font-size: calc(12px + 2vw);
-  padding-bottom: 3vw;
-}
-
-#travel .photo-text,
-#where .photo-text {
-  text-align: left;
+  text-align: center;
 }
 
 #home {
@@ -139,4 +139,15 @@
   display: none;
 }
 
+}
+
+.photo {
+  background-size: cover;
+  background-position: -10%;
+}
+.photos-ferry {
+  background-image: url(photos/ferry_sm.jpg);
+}
+.photos-beach {
+  background-image: url(photos/beach_sm.jpg);
 }
