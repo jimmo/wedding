@@ -94,10 +94,6 @@
   z-index: 70;
 }
 
-.photo-frame:focus {
-  z-index: 200 !important;
-}
-
 .photo-tab {
   display: none;
 }
@@ -131,11 +127,11 @@
 }
 
 #rsvp .photo-tab {
-  top: 45px;
+  top: 100px;
 }
 
 #where .photo-tab {
-  top: 150px;
+  top: 100px;
 }
 #travel .photo-tab {
   top: 140px;

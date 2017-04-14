@@ -4,27 +4,32 @@
     <title>Save the date!</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      crossorigin="anonymous"></script>
     <script type="text/javascript" src="soy/generated/soyutils.js"></script>
     <script type="text/javascript" src="soy/generated/main.js"></script>
+    <script type="text/javascript" src="main.js"></script>
   </head>
   <body>
 
     <div class="horizontal-menu">
+      <span class="horizontal-menu-item" data-target="home">
+        <a href="#home">Home</a>
+      </span>
       <span class="horizontal-menu-item">
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvTCId3RG0bBXZROWaQk3ViMVcEgOUXLppNr1SSPxuDFGmow/viewform" target="blank">RSVP</a>
       </span>
-      <span class="horizontal-menu-item">
+      <span class="horizontal-menu-item" data-target="where">
         <a href="#where">Venue info</a>
       </span>
-      <span class="horizontal-menu-item">
+      <span class="horizontal-menu-item" data-target="travel">
         <a href="#travel">Sydney Travel</a>
       </span>
-      <span class="horizontal-menu-item">
+      <span class="horizontal-menu-item" data-target="registry">
         <a href="#registry">Registry</a>
       </span>
-      <!-- span class="horizontal-menu-item">
-        <a href="#gallery">Gallery</a>
-      </span-->
     </div>
 
     <div class="heart-banner"></div>
@@ -32,19 +37,10 @@
     <div class="content">
     </div>
 
-    <!--div id="photos">
-      <img id="photo-0" src="photos/boat_sm.jpg">
-      <img id="photo-1" src="photos/rotto_sm.jpg">
-      <img id="photo-2" src="photos/selfie_sm.jpg">
-      <img id="photo-3" src="photos/boathouse_sm.jpg">
-      <img id="photo-4" src="photos/beach_sm.jpg">
-    </div-->
-
     <div id="footer" class="heart-banner"></div>
 
     <script type="text/javascript">
-      let contentEl = document.getElementsByClassName("content")[0];
-      contentEl.innerHTML = soy.content();
+      init();
     </script>
   </body>
 </html>
