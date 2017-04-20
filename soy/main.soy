@@ -49,7 +49,7 @@
 
   {call .card}
     {param imageHtml}
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.013663977963!2d151.151001015087!3d-33.86353873065775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12afefea677fd9%3A0xf017d68f9f0a2a0!2sRodd+Island!5e0!3m2!1sen!2sau!4v1491142369141" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div id="map"></div>
     {/param}
     {param id: 'where' /}
     {param titleStr: 'Rodd Island' /}
@@ -57,12 +57,37 @@
       <div class="photo-subtitle">
         Iron Cove, Sydney
       </div>
-      We'll be shuttling guests to the island via water taxi starting at 11am from Leichhardt Park Wharf.<br>
-      There is a small amount of free parking at Leichhardt Oval.<br>
-      If you miss us, please get a water taxi from Rodd Point to Rodd Island.<br>
-      <a href="http://www.h2owatertaxis.com.au">H20 Water Taxis</a>
+      <ul>
+      <li>
+        We're a casual bunch, so don't get too formal 🕴️
+      </li>
+      <li>
+        We'll be ferrying guests from Leichhardt Park Wharf ⛴️
+      </li>
+      <li>
+        The island is mostly grass, so we recommend against pointy shoes 👠
+      </li>
+      </ul>
     {/param}
     {param tabName: 'Venue info' /}
+  {/call}
+
+  {call .card}
+    {param imageHtml}
+      TODO
+    {/param}
+    {param id: 'schedule' /}
+    {param titleStr: 'Our Wedding' /}
+    {param contentHtml}
+    11:30 - Guest ferry from Leichhardt Park Wharf<br>
+    12:30 - Eddy and Jim say nice things to each other<br>
+    13:00 - Food and fun and friends<br>
+    16:00 - Ferries back to Leichhardt Park Wharf<br>
+    <br>
+    If you are late, or need to leave early, please get a water taxi<br>
+    <a href="https://yellowwatertaxis.com.au">Yellow Water Taxis</a>
+    {/param}
+    {param tabName: 'Our Wedding' /}
   {/call}
 
   {call .card}
@@ -79,11 +104,6 @@
       <li>
         <a href="https://www.rydges.com/accommodation/sydney-nsw/camperdown" target="blank">
           Rydges Camperdown
-        </a>
-      </li>
-      <li>
-        <a href="http://www.adarahotelsapartments.com.au/adara-camperdown" target="blank">
-          Adara Camperdown Serviced Apartments
         </a>
       </li>
     </ul>
@@ -114,7 +134,7 @@
     {param titleStr: 'Registry' /}
     {param contentHtml}
       Our house is full, so we don't need any gifts! If you feel like you must give us something,
-      please contribute to our honeymoon or donate to charity.<br>
+      please donate to charity, print the receipt and put it in an envelope.<br>
 
       We suggest one of these (or an equivalent in your country):
       <ul>
