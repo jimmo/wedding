@@ -98,12 +98,13 @@ hr {
   font-size: calc(10px + 1vw);
   font-style: italic;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 0.5vw;
 }
 
 .photo-text {
   font-family: "Oswald", sans-serif;
   font-size: calc(12px + 0.5vw);
+  margin-left: 5px;
   padding-bottom: 1vw;
   text-align: left;
 }
@@ -148,7 +149,51 @@ hr {
   display: none;
 }
 
+.photo {
+  background-size: cover;
+  background-position: -10%;
+}
+.photos-ferry {
+  background-image: url(photos/ferry_sm.jpg);
+}
+.photos-beach {
+  background-image: url(photos/beach_sm.jpg);
+}
+
+#rsvp iframe {
+  height: 79vw;
+  max-height: 560px;
+}
+
+ul {
+  margin-top: 0;
+}
+
 @media (min-width: 950px) {
+
+.photo-title {
+  font-size: 40px;
+  margin-top: 14px;
+}
+
+.photo-subtitle {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.photo-text {
+  font-size: 19px;
+  padding-bottom: 14px;
+}
+
+#home .photo-title {
+  font-size: 75px;
+  margin-top: 43px;
+  margin-bottom: 43px;
+}
+#home .photo-text {
+  font-size: 42px;
+}
 
 .photo-tab {
 	border-top: 1px solid #668AA3;
@@ -198,22 +243,3 @@ hr {
 }
 
 }
-
-.photo {
-  background-size: cover;
-  background-position: -10%;
-}
-.photos-ferry {
-  background-image: url(photos/ferry_sm.jpg);
-}
-.photos-beach {
-  background-image: url(photos/beach_sm.jpg);
-}
- #rsvp iframe {
-   height: 79vw;
-   max-height: 560px;
- }
-
- ul {
-   margin-top: 0;
- }
