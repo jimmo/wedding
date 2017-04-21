@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:300|Tangerine');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: white;
   font-family: 'Tangerine', cursive;
@@ -157,8 +161,8 @@ body {
 }
 
 #rsvp iframe {
-  height: 79vw;
-  max-height: 560px;
+  height: calc(79vw - 20px);
+  max-height: 540px;
 }
 
 ul {
@@ -237,6 +241,14 @@ ul {
 
 .horizontal-menu {
   display: none;
+}
+
+}
+
+@media (max-width: 500px) {
+
+.content {
+  width: 90vw;
 }
 
 }
