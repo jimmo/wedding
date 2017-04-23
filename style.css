@@ -91,6 +91,9 @@ body {
   padding-bottom: 1vw;
   text-align: left;
 }
+ul {
+  margin-top: 0;
+}
 
 #home .photo-title {
   font-size: 10vw;
@@ -235,7 +238,6 @@ body {
   .photo-text {
     font-size: 2.5vh;
     margin-left: 3vh;
-    margin-top: -2vh;
     padding-bottom: 1vh;
   }
   #home .photo-title {
