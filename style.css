@@ -5,31 +5,22 @@
 }
 
 body {
-  color: white;
+  /*color: white;*/
+  background-image: url(photos/background.jpg);
+  background-size: 100vw 100vh;
   font-family: 'Tangerine', cursive;
   margin: 0;
   text-align: center;
 }
 
-.heart-banner {
-  /* source: https://pixabay.com/en/chain-heart-valentine-love-1980250 */
-  background-image: url(photos/chain.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: -5vw;
-  height: 8vw;
-}
-
 .horizontal-menu {
   background-color: #668AA3;
-  border-bottom: 1px solid #668AA3;
   font-family: "Oswald", sans-serif;
   margin-bottom: 7px;
   padding-bottom: 2px;
 }
 
 .horizontal-menu-item {
-  border: 1px solid #668AA3;
   font-size: calc(12px + 1vw);
   padding: 2px 1vw;
 }
@@ -42,19 +33,12 @@ body {
   color: #FEAD88;
 }
 
-#footer {
-  transform: scaley(-1);
-}
-
 .content {
-  height: 82vw;
-  max-height: 590px;
   position: relative;
   margin: auto;
-  margin-bottom: 3vh;
-  margin-top: 1vh;
   max-width: 500px;
   width: 70vw;
+  margin-top: 9vw;
 }
 
 .photo-frame {
@@ -79,7 +63,6 @@ body {
   width: 100%;
 }
 
-.photo-frame iframe,
 #map,
 .photo-frame .photo {
   display: block;
@@ -118,6 +101,9 @@ body {
   font-family: 'Tangerine', cursive;
   font-size: calc(16px + 3vw);
   text-align: center;
+}
+.home-subtitle {
+  font-size: 50%;
 }
 
 #home {
@@ -161,8 +147,9 @@ body {
 }
 
 #rsvp iframe {
-  height: calc(79vw - 20px);
+  height: 100%;
   max-height: 540px;
+  width: 100%;
 }
 
 ul {
@@ -171,6 +158,10 @@ ul {
 }
 
 @media (min-width: 950px) {
+
+.content {
+  margin-top: 6vw;
+}
 
 .photo-title {
   font-size: 40px;
@@ -190,7 +181,7 @@ ul {
 #home .photo-title {
   font-size: 75px;
   margin-top: 43px;
-  margin-bottom: 43px;
+  margin-bottom: 33px;
 }
 #home .photo-text {
   font-size: 42px;
@@ -248,7 +239,16 @@ ul {
 @media (max-width: 500px) {
 
 .content {
-  width: 90vw;
+  width: 89vw;
+}
+
+.photo-frame {
+  height: 95vw;
+}
+
+#map,
+.photo-frame .photo {
+  height: 52vw;
 }
 
 }

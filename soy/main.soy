@@ -3,7 +3,7 @@
 /**
  * @param id
  * @param imageHtml
- * @param titleStr
+ * @param titleHtml
  * @param contentHtml
  * @param tabName
  */
@@ -11,7 +11,7 @@
 <div tabindex="0" class="photo-frame" id="{$id}">
   {$imageHtml|noAutoescape}
   <div class="photo-title">
-    <a name="{$id}">{$titleStr}</a>
+    <a name="{$id}">{$titleHtml|noAutoescape}</a>
   </div>
   <div class="photo-text">
     {$contentHtml|noAutoescape}
@@ -32,8 +32,15 @@
       <div class="photo photos-ferry"></div>
     {/param}
     {param id: 'home' /}
-    {param titleStr: 'Eddy and Jim' /}
-    {param contentHtml: 'September 23, 2017' /}
+    {param titleHtml}
+    Eddy and Jim
+    <div class="home-subtitle">
+      are getting married!
+    </div>
+    {/param}
+    {param contentHtml}
+    September 23, 2017
+    {/param}
     {param tabName: 'Home' /}
   {/call}
 
@@ -42,7 +49,7 @@
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdvTCId3RG0bBXZROWaQk3ViMVcEgOUXLppNr1SSPxuDFGmow/viewform"></iframe>
     {/param}
     {param id: 'rsvp' /}
-    {param titleStr: '' /}
+    {param titleHtml: '' /}
     {param contentHtml: '' /}
     {param tabName: 'RSVP' /}
   {/call}
@@ -52,11 +59,8 @@
       <div id="map"></div>
     {/param}
     {param id: 'where' /}
-    {param titleStr: 'Rodd Island' /}
+    {param titleHtml: 'Rodd Island - Iron Cove, Sydney' /}
     {param contentHtml}
-      <div class="photo-subtitle">
-        Iron Cove, Sydney
-      </div>
       <ul>
       <li>
         We're a casual bunch, so don't get too formal 🕴️
@@ -71,7 +75,7 @@
         There is a small amount of free parking at Leichhardt Oval 🚗
       </li>
       <li>
-        If you're taking public transport, the wharf is a 15 minute walk from the Leichhardt North light rail station 🚃
+        The wharf is 15 minutes walk from Leichhardt North light rail station 🚃
       </li>
       </ul>
     {/param}
@@ -83,7 +87,7 @@
       <img src="photos/japan_sm.jpg">
     {/param}
     {param id: 'schedule' /}
-    {param titleStr: 'Our Wedding' /}
+    {param titleHtml: 'Our Wedding' /}
     {param contentHtml}
     11:00 - Guest ferry from Leichhardt Park Wharf<br>
     12:30 - Eddy and Jim say nice things to each other<br>
@@ -101,7 +105,7 @@
       <img src="photos/whitsundays_sm.jpg">
     {/param}
     {param id: 'travel' /}
-    {param titleStr: 'Visiting Sydney' /}
+    {param titleHtml: 'Visiting Sydney' /}
     {param contentHtml}
     <div class="photo-subtitle">
       Hotels we recommend
@@ -137,9 +141,9 @@
       <div class="photo photos-beach"></div>
     {/param}
     {param id: 'registry' /}
-    {param titleStr: 'Registry' /}
+    {param titleHtml: 'Registry' /}
     {param contentHtml}
-      Our house is full, so we don't need any gifts! If you feel like you must give us something,
+      We don't need any gifts! If you feel like you must give us something,
       please donate to charity, print the receipt and put it in an envelope.
 
       We suggest one of these (or an equivalent in your country):
