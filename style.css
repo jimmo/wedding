@@ -133,20 +133,12 @@ ul {
   transform: rotate(-5deg);
   z-index: 70;
 }
+#contact {
+  transform: rotate(2deg);
+}
 
 .photo-tab {
   display: none;
-}
-
-.photo {
-  background-size: cover;
-  background-position: -10%;
-}
-.photos-ferry {
-  background-image: url(photos/ferry_sm.jpg);
-}
-.photos-beach {
-  background-image: url(photos/beach_sm.jpg);
 }
 
 #rsvp iframe {
@@ -201,6 +193,9 @@ ul {
 }
 #registry .photo-tab {
   top: 65%;
+}
+#contact .photo-tab {
+  top: 70%;
 }
 
 .horizontal-menu {

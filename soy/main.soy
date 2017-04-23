@@ -29,7 +29,7 @@
 {template .content}
   {call .card}
     {param imageHtml}
-      <div class="photo photos-ferry"></div>
+      <img src="photos/ferry_sm.jpg">
     {/param}
     {param id: 'home' /}
     {param titleHtml}
@@ -138,20 +138,22 @@
 
   {call .card}
     {param imageHtml}
-      <div class="photo photos-beach"></div>
+      <img src="photos/beach_sm.jpg">
     {/param}
     {param id: 'registry' /}
     {param titleHtml: 'Registry' /}
     {param contentHtml}
-      We don't need any gifts! If you feel like you must give us something,
-      please donate to charity, print the receipt and put it in an envelope.
+      We don't need any gifts! However, if gift-giving is your thing, we'd love it if you donate to one of these charities instead
 
-      We suggest one of these (or an equivalent in your country):
+      (or an equivalent in your country):
       <ul>
         <li>
           <a href="https://www.thesmithfamily.com.au">
             The Smith Family
           </a>
+        </li>
+        <li>
+          <a href="http://www.ozharvest.org">OzHarvest</a>
         </li>
         <li>
           <a href="https://unwomen.org.au">
@@ -171,5 +173,19 @@
       </ul>
     {/param}
     {param tabName: 'Registry' /}
+  {/call}
+
+  {call .card}
+    {param imageHtml}
+      <img src="photos/boathouse_sm.jpg">
+    {/param}
+    {param id: 'contact' /}
+    {param titleHtml: 'Contact us' /}
+    {param contentHtml}
+      Email: <a href="mailto:eddyandjim@gmail.com">eddyandjim@gmail.com</a><br>
+      Phone (Eddy): 0411 799 957<br>
+      Phone (Jim): 0417 913 600
+    {/param}
+    {param tabName: 'Contact us' /}
   {/call}
 {/template}
