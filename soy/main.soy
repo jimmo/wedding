@@ -11,7 +11,7 @@
 <div tabindex="0" class="photo-frame" id="{$id}">
   {$imageHtml|noAutoescape}
   <div class="photo-title">
-    <a name="{$id}">{$titleHtml|noAutoescape}</a>
+    {$titleHtml|noAutoescape}
   </div>
   <div class="photo-text">
     {$contentHtml|noAutoescape}
@@ -95,7 +95,7 @@
     16:00 - Ferries back to Leichhardt Park Wharf<br>
     <br>
     If you are late, or need to leave early, please get a water taxi<br>
-    <a href="https://yellowwatertaxis.com.au">Yellow Water Taxis</a>
+    <a href="https://yellowwatertaxis.com.au" target="_blank">Yellow Water Taxis</a>
     {/param}
     {param tabName: 'Our Wedding' /}
   {/call}
@@ -112,7 +112,7 @@
     </div>
     <ul>
       <li>
-        <a href="https://www.rydges.com/accommodation/sydney-nsw/camperdown" target="blank">
+        <a href="https://www.rydges.com/accommodation/sydney-nsw/camperdown" target="_blank">
           Rydges Camperdown
         </a>
       </li>
@@ -122,12 +122,12 @@
     </div>
     <ul>
       <li>
-        <a href="https://taronga.org.au/taronga-zoo" target="blank">
+        <a href="https://taronga.org.au/taronga-zoo" target="_blank">
           Take a ferry to Taronga Zoo
         </a>
       </li>
       <li>
-        <a href="http://www.bonditocoogeewalk.com.au" target="blank">
+        <a href="http://www.bonditocoogeewalk.com.au" target="_blank">
           Take a beautiful coastal walk from Bondi to Coogee
         </a>
       </li>
@@ -148,25 +148,25 @@
       (or an equivalent in your country):
       <ul>
         <li>
-          <a href="https://www.thesmithfamily.com.au">
+          <a href="https://www.thesmithfamily.com.au" target="_blank">
             The Smith Family
           </a>
         </li>
         <li>
-          <a href="http://www.ozharvest.org">OzHarvest</a>
+          <a href="http://www.ozharvest.org" target="_blank">OzHarvest</a>
         </li>
         <li>
-          <a href="https://unwomen.org.au">
+          <a href="https://unwomen.org.au" target="_blank">
             UN Women National Committee Australia
           </a>
         </li>
         <li>
-          <a href="http://www.wateraid.org/au">
+          <a href="http://www.wateraid.org/au" target="_blank">
             WaterAid Australia
           </a>
         </li>
         <li>
-          <a href="http://www.doctorswithoutborders.org">
+          <a href="http://www.doctorswithoutborders.org" target="_blank">
             Doctors Without Borders
           </a>
         </li>
@@ -183,8 +183,8 @@
     {param titleHtml: 'Contact us' /}
     {param contentHtml}
       Email: <a href="mailto:eddyandjim@gmail.com">eddyandjim@gmail.com</a><br>
-      Phone (Eddy): 0411 799 957<br>
-      Phone (Jim): 0417 913 600
+      Phone (Eddy): <a href="tel:+61411799957">0411 799 957</a><br>
+      Phone (Jim): <a href="tel:+61417913600">0417 913 600</a>
     {/param}
     {param tabName: 'Contact us' /}
   {/call}
