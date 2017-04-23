@@ -25,11 +25,11 @@ body {
   padding: 2px 1vw;
 }
 
-.horizontal-menu-item a:link {
+.horizontal-menu-item a {
   color: #FEFE87;
 }
 
-.horizontal-menu-item a:visited{
+.horizontal-menu-item a:hover {
   color: #FEAD88;
 }
 
