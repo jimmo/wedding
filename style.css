@@ -93,6 +93,7 @@ body {
 }
 ul {
   margin-top: 0;
+  padding-left: 20px;
 }
 
 #home .photo-title {
@@ -134,7 +135,7 @@ ul {
   z-index: 70;
 }
 #contact {
-  transform: rotate(2deg);
+  transform: rotate(3deg);
 }
 
 .photo-tab {
