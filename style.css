@@ -36,9 +36,9 @@ body {
 .content {
   position: relative;
   margin: auto;
-  max-width: 500px;
+  max-width: 72vh;
   width: 70vw;
-  margin-top: 9vw;
+  margin-top: 9vh;
 }
 
 .photo-frame {
@@ -48,7 +48,7 @@ body {
   color: #668AA3;
   display: block;
   height: 79vw;
-  max-height: 560px;
+  max-height: 80vh;
   padding: 10px;
   outline: 0;
   position: absolute;
@@ -68,7 +68,7 @@ body {
   display: block;
   width: 100%;
   height: 39.4vw;
-  max-height: 282px;
+  max-height: 40.5vh;
 }
 
 .photo-title {
@@ -158,10 +158,6 @@ ul {
 }
 
 @media (min-width: 950px) {
-
-.content {
-  margin-top: 6vw;
-}
 
 .photo-title {
   font-size: 40px;
