@@ -181,13 +181,13 @@ ul {
 }
 
 #rsvp .photo-tab {
-  top: 18%;
+  top: 72%;
 }
 #where .photo-tab {
   top: 20%;
 }
 #schedule .photo-tab {
-  top: 38%;
+  top: 16%;
 }
 #travel .photo-tab {
   top: 40%;
@@ -196,7 +196,7 @@ ul {
   top: 65%;
 }
 #contact .photo-tab {
-  top: 68%;
+  top: 32%;
 }
 
 .horizontal-menu {
